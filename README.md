@@ -5,8 +5,8 @@ A port of the example from [Connecting NSOutlineView to Core Data in 10.6 Part 1
 * Native Xcode Coredata Modelling
 * Native Interface Builder
 * Drag and drop
-* TODO: delete subFolders
-* TODO: finish tutorial
+* Add/delete items
+* TODO: write tutorial
 * TODO: save on exit
 * FIXME: detect foldername changed, so it can be saved
 

@@ -11,7 +11,14 @@ class OutlineViewController < NSObject
 		App.delegate.managedObjectContext.save(error)
 	end
 
-	def outlineViewSelectionDidChange(notification)
+	def deleteNode(sender)
+		selecteditem = @myOutlineView.itemAtRow(@myOutlineView.selectedRow)
+		App.delegate.managedObjectContext.deleteObject(selecteditem.representedObject)
+		error = Pointer.new(:object)
+		App.delegate.managedObjectContext.save(error)
+	end
+
+	def xoutlineViewSelectionDidChange(notification)
 		p "outlineViewSelectionDidChange"
 		error = Pointer.new(:object)
 		App.delegate.managedObjectContext.save(error)
