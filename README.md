@@ -4,7 +4,11 @@ A port of the example from [Connecting NSOutlineView to Core Data in 10.6 Part 1
 ## Features
 * Native Xcode Coredata Modelling
 * Native Interface Builder
-* Not yet: drag and drop
+* Drag and drop
+* TODO: delete subFolders
+* TODO: finish tutorial
+* TODO: save on exit
+* FIXME: detect foldername changed, so it can be saved
 
 ## Notes
 To make this example work I had to rename the entity `group` to folder and the attribute `name` to `folderName`. I earlier encountered problems when I had an attribute called `description`.
